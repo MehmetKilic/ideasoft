@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "4b7cc397-1a53-441a-b24c-b3c2ebd2d6c3",
+		"name": "http://api.ideasoft.test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/orders/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.ideasoft.test/v1/orders/list",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ideasoft",
+						"test"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v1/product/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Schneider Asfora Beyaz Komütatör",
+							"type": "default"
+						},
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "12.95",
+							"type": "default"
+						},
+						{
+							"key": "stock",
+							"value": "10",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.ideasoft.test/v1/product/create",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ideasoft",
+						"test"
+					],
+					"path": [
+						"v1",
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v1/order/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://api.ideasoft.test/v1/order/list",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ideasoft",
+						"test"
+					],
+					"path": [
+						"v1",
+						"order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v1/order/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "items[0][product_id]",
+							"value": "102",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "items[0][quantity]",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "items[1][product_id]",
+							"value": "104",
+							"type": "default"
+						},
+						{
+							"key": "items[1][quantity]",
+							"value": "6",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.ideasoft.test/v1/order/create",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ideasoft",
+						"test"
+					],
+					"path": [
+						"v1",
+						"order",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/order/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://api.ideasoft.test/v1/order/delete/1",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ideasoft",
+						"test"
+					],
+					"path": [
+						"v1",
+						"order",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/order/discount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.ideasoft.test/v1/order/discount/25",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ideasoft",
+						"test"
+					],
+					"path": [
+						"v1",
+						"order",
+						"discount",
+						"25"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
